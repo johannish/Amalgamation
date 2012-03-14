@@ -1,9 +1,10 @@
 Amalgamation seeks to be an accurate clone of Sid Sackson's classic board game 
 "Acquire," originally published by 3M in 1962.  It is essentially a stock market
 simulation game in which players purchase shares in one of 7 corporate chains, 
-and use tiles to initiate and grow these chains.
+and use tiles to initiate, grow, and merge these chains.
 
 This project will be written in TCL, and will be organized into two components:
 a server, designed to respond to standard http requests, and a client, which
-will initally be a javascript/html5 web client, but may be any client able to
+will initally be a tcl/tk web client, but may be any client able to
 communicate using http.
+

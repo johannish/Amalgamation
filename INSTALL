@@ -1,0 +1,1 @@
+tclhttpd3.5.1 needs tcl 8.3+ and tcllib to run. When those are installed, simply run httpd-start.sh.
