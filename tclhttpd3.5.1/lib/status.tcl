@@ -30,12 +30,7 @@ proc Status_Url {dir {imgdir /images}} {
 # Results:
 #	Returns the string "hello".
 
-proc Status/hello {args} {
-	#puts $env
-	#puts $::errorinfo
-	#return hello
-	return $env(REQUEST_METHOD)
-}
+proc Status/hello {args} {return hello}
 
 # StatusHeader --
 #
