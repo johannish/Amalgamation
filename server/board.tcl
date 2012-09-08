@@ -12,9 +12,9 @@ proc getLetter {i} {
 proc initBoard {x y} {
 	for {set i 0} {$i < $x} {incr i} {
 		for {set j 0} {$j < $y} {incr j} {
-			set x_cord [getLetter $i]
-			# Y value should be [1] based -- A1, A2, A3, etc.
-			set y_cord [expr $j + 1]
+			set y_cord [getLetter $j]
+			# X value should be [1] based -- A1, A2, A3, etc.
+			set x_cord [expr $i + 1]
 			dict set board $x_cord $y_cord ""
 		}
 	}
@@ -24,9 +24,9 @@ proc initBoard {x y} {
 proc initTiles {x y} {
 	for {set i 0} {$i < $x} {incr i} {
 		for {set j 0} {$j < $y} {incr j} {
-			set x_cord [getLetter $i]
-			# Y value should be [1] based -- A1, A2, A3, etc.
-			set y_cord [expr $j + 1]
+			set y_cord [getLetter $j]
+			# X value should be [1] based -- A1, A2, A3, etc.
+			set x_cord [expr $i + 1]
 			dict set tiles $x_cord $y_cord "unused"
 		}
 	}
